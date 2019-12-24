@@ -22,7 +22,7 @@ class DAVISCaptureDataLoader():
         self.data_loader = torch.utils.data.DataLoader(dataset,
                                                        batch_size=_batch_size,
                                                        shuffle=False,
-                                                       num_workers=int(1))
+                                                       num_workers=int(10))
         self.dataset = dataset
 
     def load_data(self):
